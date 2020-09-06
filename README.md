@@ -7,7 +7,8 @@ but not anything more complex than graphing arrays of data.
 
 ## Learning and Understanding
 The first thing I did was to find videos or articles that give a high level overview of clustering.
-I found videos to be easier since they were abundant and more enjoyable to learn. 
+I found videos to be easier since they were abundant and more enjoyable to learn. I then looked at the 
+documentation for the libraries I used to better understand their methods.
 
 ## Algorithm and Libraries
 I chose to use the **K-Means Clustering algorithm**, which computes the clusters by calculating a centroid and 
