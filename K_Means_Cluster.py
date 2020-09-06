@@ -2,12 +2,12 @@ import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.cluster import KMeans
 
-data=pd.read_csv("path to CSV")
+data=pd.read_csv("path to CSV") #ex: "C:\Users\Your Name\Desktop\ACM-Research-Coding-Challenge\Clusterplot.csv"
 
 
 plt.scatter(data["V1"], data["V2"])
 
-km = KMeans(n_clusters=3)
+km = KMeans(n_clusters=3)       # initially hard-coded the # of clusters
 
 y_pred = km.fit_predict(data[['V1','V2']])
 
