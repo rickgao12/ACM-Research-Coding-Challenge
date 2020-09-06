@@ -14,13 +14,19 @@ I chose to use the **K-Means Clustering algorithm**, which computes the clusters
 associating the closest data points to that centroid. The libraries I used were pandas, matplotlib, and sklearn.
 I used pandas to read the CSV, matplotlib to graph the clusters, and sklearn to apply the K-Means algorithm.
 
-![K-Means](img1.jpg)
+![K-Means clusters](img1.jpg)
 
 ## Challenges I faced
 The coding challenge asked to calculate the number of clusters in the data. I initially had to
 hard code the number of clusters so that the clusters could be calculated. However, I did some more research and
-learned about the **Elbow technique**, a dynamic way to calculate the amount of clusters needed. 
+learned about the **Elbow technique**, a dynamic way to calculate the amount of clusters needed by calculating
+the most optimal sum of squares error. 
 
 ![Elbow technique](img2.jpg)
 
 The above image shows the most fitting number of clusters at the "elbow", in this case k = 3.
+
+## Improvements
+We could even further process the data by scaling the data, and then applying the K-Means algorithm
+to accurately reflect the number of clusters. As of now, I am still exploring the sklearn library
+to do this.
