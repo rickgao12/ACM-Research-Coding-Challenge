@@ -1,22 +1,26 @@
-# ACM Research Coding Challenge (Fall 2020)
+# Rick Gao - ACM Research Coding Challenge (Fall 2020)
 
-## No Collaboration Policy
+## The start
+I have never worked with clustering algorithms before, so I did some research to get a basic
+understanding of how they work. I have worked with some Data Science libraries before such as matplotlib,
+but not anything more complex than graphing arrays of data.
 
-**You may not collaborate with anyone on this challenge.** You _are_ allowed to use Internet documentation. If you _do_ use existing code (either from Github, Stack Overflow, or other sources), **please cite your sources in the README**.
+## Learning and Understanding
+The first thing I did was to find videos or articles that give a high level overview of clustering.
+I found videos to be easier since they were abundant and more enjoyable to learn. 
 
-## Submission Procedure
+## Algorithm and Libraries
+I chose to use the **K-Means Clustering algorithm**, which computes the clusters by calculating a centroid and 
+associating the closest data points to that centroid. The libraries I used were pandas, matplotlib, and sklearn.
+I used pandas to read the CSV, matplotlib to graph the clusters, and sklearn to apply the K-Means algorithm.
 
-Please follow the below instructions on how to submit your answers.
+![K-Means](img1.jpg)
 
-1. Create a **public** fork of this repo and name it `ACM-Research-Coding-Challenge`. To fork this repo, click the button on the top right and click the "Fork" button.
-2. Clone the fork of the repo to your computer using . `git clone [the URL of your clone]`. You may need to install Git for this (Google it).
-3. Complete the Challenge based on the instructions below.
-4. Email the link of your repo to research@acmutd.co with the same email you used to submit your application. Be sure to include your name in the email.
+## Challenges I faced
+The coding challenge asked to calculate the number of clusters in the data. I initially had to
+hard code the number of clusters so that the clusters could be calculated. However, I did some more research and
+learned about the **Elbow technique**, a dynamic way to calculate the amount of clusters needed. 
 
-## Question One
+![Elbow technique](img2.jpg)
 
-![Image of Cluster Plot](ClusterPlot.png)
-<br/>
-Given the following dataset in `ClusterPlot.csv`, determine the number of clusters by using any clustering algorithm. **You're allowed to use any Python library you want to implement this**, just document which ones you used in this README file. Try to complete this as soon as possible.
-
-Regardless if you can or cannot answer the question, provide a short explanation of how you got your solution or how you think it can be solved in your README.md file.
+The above image shows the most fitting number of clusters at the "elbow", in this case k = 3.
