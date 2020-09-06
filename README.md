@@ -14,7 +14,8 @@ documentation for the libraries I used to better understand their methods.
 I chose to use the **K-Means Clustering algorithm**, which computes the clusters by calculating a centroid and 
 associating the closest data points to that centroid. The code was written in Jupyter Notebook, and the 
 libraries I used were pandas, matplotlib, and sklearn. I used pandas to read the CSV, matplotlib to graph 
-the clusters, and sklearn to apply the K-Means algorithm.
+the clusters, and sklearn to apply the K-Means algorithm. Luckily enough, most of the math needed was abstracted by
+sklearn's library functions.
 
 ![K-Means clusters](img1.jpg)
 
